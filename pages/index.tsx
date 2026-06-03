@@ -10,9 +10,10 @@ export default function Home() {
     <>
       {/* <IntroAnimation /> */}
 
-      <HeroVideoSlider />
-      
-      <Navbar />
+      <>
+        <HeroVideoSlider />
+        <Navbar />
+      </>
 
       {/* ── MISSION ───────────────────────────── */}
       <section className={styles.mission}>
