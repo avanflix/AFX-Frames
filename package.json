@@ -1,0 +1,23 @@
+{
+  "name": "house-of-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "framer-motion": "^12.40.0",
+    "next": "14.0.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "swiper": "^12.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5"
+  }
+}

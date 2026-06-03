@@ -1,0 +1,523 @@
+/* ── PAGE HEADER ───────────────────────────────────── */
+.pageHeader {
+  position: relative;
+  height: 55vh;
+  min-height: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.headerBg {
+  position: absolute;
+  inset: 0;
+  background: url('/images/Gallery/14.jpg') center 30%/cover no-repeat;
+}
+
+.headerBg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(10,8,5,0.82) 0%, rgba(10,8,5,0.55) 100%);
+}
+
+.headerContent {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding-top: 80px;
+}
+
+.headerEyebrow {
+  font-size: 10px;
+  letter-spacing: 0.35em;
+  color: var(--gold-light);
+  margin-bottom: 20px;
+  font-weight: 500;
+  animation: fadeUp 0.8s ease both;
+}
+
+.headerTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(48px, 7vw, 88px);
+  font-weight: 300;
+  color: white;
+  line-height: 1.05;
+  margin-bottom: 16px;
+  animation: fadeUp 0.8s 0.1s ease both;
+}
+
+.headerTitle em {
+  font-style: italic;
+  color: var(--gold-light);
+}
+
+.headerSub {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  animation: fadeUp 0.8s 0.2s ease both;
+}
+
+/* ── PLANS SECTION ─────────────────────────────────── */
+.plansSection {
+  background: var(--warm-white);
+  padding: 100px 40px;
+}
+
+.plansInner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.plansGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.06fr 1fr;
+  gap: 0;
+  align-items: stretch;
+  border: 1px solid var(--border);
+}
+
+/* ── PLAN CARD ─────────────────────────────────────── */
+.planCard {
+  background: var(--warm-white);
+  padding: 56px 40px;
+  border-right: 1px solid var(--border);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.3s;
+}
+
+.planCard:last-child { border-right: none; }
+
+.planCard:hover {
+  background: var(--cream);
+}
+
+.featured {
+  background: var(--charcoal) !important;
+  transform: none;
+  z-index: 1;
+}
+
+.popularBadge {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: var(--gold);
+  color: white;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  padding: 7px 20px;
+  white-space: nowrap;
+}
+
+.planTop {
+  margin-bottom: 36px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid var(--border);
+}
+
+.featured .planTop {
+  border-bottom-color: rgba(255,255,255,0.08);
+}
+
+.planNum {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px;
+  font-weight: 300;
+  color: var(--gold-pale);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.featured .planNum {
+  color: rgba(255,255,255,0.1);
+}
+
+.planName {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--charcoal);
+  margin-bottom: 4px;
+}
+
+.featured .planName {
+  color: white;
+}
+
+.planTagline {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--mid-gray);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.featured .planTagline {
+  color: rgba(255,255,255,0.45);
+}
+
+
+.priceRange {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--gold);
+}
+
+.featured .priceRange {
+  color: var(--gold-light);
+}
+
+.planFeatures {
+  list-style: none;
+  margin-bottom: 28px;
+  flex: 1;
+}
+
+.planFeatures li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--mid-gray);
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-weight: 400;
+}
+
+.featured .planFeatures li {
+  color: rgba(255,255,255,0.65);
+  border-bottom-color: rgba(255,255,255,0.06);
+}
+
+.planFeatures li:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.featured .planFeatures li:first-child {
+  border-top-color: rgba(255,255,255,0.06);
+}
+
+.tick {
+  color: var(--gold);
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.planDesc {
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--mid-gray);
+  font-weight: 300;
+  margin-bottom: 36px;
+  flex: 1;
+}
+
+.featured .planDesc {
+  color: rgba(255,255,255,0.45);
+}
+
+.planBtn {
+  display: block;
+  text-align: center;
+  padding: 14px 24px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.planBtn:hover {
+  background: var(--gold);
+  color: white;
+}
+
+.planBtnFeatured {
+  display: block;
+  text-align: center;
+  padding: 14px 24px;
+  background: var(--gold);
+  border: 1px solid var(--gold);
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.planBtnFeatured:hover {
+  background: transparent;
+  color: var(--gold-light);
+}
+
+/* ── STUDENT SECTION ───────────────────────────────── */
+.studentSection {
+  background: var(--dark);
+  padding: 100px 40px;
+}
+
+.studentInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.studentLabel {
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  color: var(--gold);
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.studentTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(40px, 5vw, 68px);
+  font-weight: 300;
+  color: white;
+  line-height: 1.1;
+}
+
+.studentTitle em {
+  font-style: italic;
+  color: var(--gold-light);
+}
+
+.studentPrice {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 64px;
+  font-weight: 300;
+  color: var(--gold-light);
+  line-height: 1;
+  margin-bottom: 24px;
+}
+
+.studentDesc {
+  font-size: 15px;
+  line-height: 1.9;
+  color: rgba(255,255,255,0.6);
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+.studentNote {
+  font-size: 12px;
+  color: rgba(255,255,255,0.3);
+  font-style: italic;
+  margin-bottom: 32px;
+}
+
+.studentBtn {
+  display: inline-block;
+  padding: 14px 40px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.studentBtn:hover {
+  background: var(--gold);
+  color: white;
+}
+
+/* ── WHY STRIP ─────────────────────────────────────── */
+.whyStrip {
+  background: var(--cream);
+  padding: 48px 40px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.whyStripInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.whyItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.whyIcon {
+  font-size: 16px;
+  color: var(--gold);
+}
+
+.whyLabel {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--mid-gray);
+  font-weight: 600;
+}
+
+/* ── CONTACT ───────────────────────────────────────── */
+.contactSection {
+  background: var(--warm-white);
+  padding: 100px 40px;
+}
+
+.contactInner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contactTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(36px, 5vw, 60px);
+  font-weight: 400;
+  color: var(--charcoal);
+  margin-bottom: 20px;
+  line-height: 1.15;
+}
+
+.contactTitle em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.contactDesc {
+  font-size: 15px;
+  color: var(--mid-gray);
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 64px;
+}
+
+.contactDetails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.contactItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.contactLabel {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.contactValue {
+  font-size: 14px;
+  color: var(--charcoal);
+  text-decoration: none;
+  font-weight: 300;
+  transition: color 0.3s;
+}
+
+a.contactValue:hover {
+  color: var(--gold);
+}
+
+.contactDivider {
+  width: 1px;
+  height: 48px;
+  background: var(--border);
+}
+
+/* ── FOOTER ────────────────────────────────────────── */
+.footer {
+  background: var(--dark);
+  padding: 32px 40px;
+}
+
+.footerInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footerInner p {
+  font-size: 11px;
+  color: rgba(255,255,255,0.2);
+}
+
+.footerLinks {
+  display: flex;
+  gap: 28px;
+}
+
+.footerLinks a {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+.footerLinks a:hover {
+  color: var(--gold-light);
+}
+
+/* ── ANIMATION ─────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── RESPONSIVE ────────────────────────────────────── */
+@media (max-width: 900px) {
+  .plansGrid {
+    grid-template-columns: 1fr;
+  }
+  .planCard { border-right: none; border-bottom: 1px solid var(--border); }
+  .featured { transform: none; }
+  .studentInner { grid-template-columns: 1fr; gap: 40px; }
+  .whyStripInner { justify-content: flex-start; }
+  .contactDetails { flex-direction: column; gap: 32px; }
+  .contactDivider { width: 60px; height: 1px; }
+}
+
+@media (max-width: 600px) {
+  .plansSection, .studentSection, .contactSection { padding: 60px 24px; }
+  .whyStrip { padding: 36px 24px; }
+}
