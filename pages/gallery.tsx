@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
-import styles from '/styles/Gallery.module.css'
+import styles from '../styles/Gallery.module.css'
 
 const photos = [
   { src: '/images/Gallery/1.jpg', alt: 'Fashion Portrait', span: 'tall' },
