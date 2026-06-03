@@ -199,22 +199,22 @@ export default function Home() {
       <footer className={styles.footer}>
         <div className={styles.footerInner}>
           <div className={styles.footerLogo}>
-            <span className={styles.footerMark}>HD</span>
-            <span className={styles.footerBrand}>HOUSE OF THE PORTFOLIO</span>
+            <span className={styles.footerMark}>AF</span>
+            <span className={styles.footerBrand}>AFX FRAMES</span>
           </div>
           <div className={styles.footerLinks}>
             <Link href="/">Home</Link>
             <Link href="/gallery">Gallery</Link>
-            <Link href="/join">Join Now</Link>
+            {/* <Link href="/join">Join Now</Link> */}
           </div>
           <div className={styles.footerContact}>
-            <p>hello@houseofportfolios.com</p>
-            <p>@houseofportfolios</p>
+            <p>hello@afxframes.com</p>
+            <p>@afxframes</p>
             <p>Studio by appointment only</p>
           </div>
         </div>
         <div className={styles.footerBottom}>
-          <p>© {new Date().getFullYear()} House of the Portfolio. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} AFX FRAMES. All rights reserved.</p>
         </div>
       </footer>
     </>

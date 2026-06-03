@@ -25,7 +25,7 @@ export default function Gallery() {
 
 
       <Head>
-        <title>Gallery – House of the Portfolio</title>
+        <title>Gallery – AFX FRAMES</title>
         <meta name="description" content="Browse our curated portfolio gallery — premium photography for models, actors, influencers, and professionals." />
       </Head>
 
@@ -61,17 +61,17 @@ export default function Gallery() {
       <section className={styles.galleryCta}>
         <h2 className={styles.ctaTitle}>Ready to create <em>yours?</em></h2>
         <p className={styles.ctaSub}>Join hundreds of creatives who've elevated their presence with us.</p>
-        <a href="/join" className={styles.ctaBtn}>View Packages</a>
+        {/* <a href="/join" className={styles.ctaBtn}>View Packages</a> */}
       </section>
 
       {/* Footer */}
       <footer className={styles.footer}>
         <div className={styles.footerInner}>
-          <p>© {new Date().getFullYear()} House of the Portfolio. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} AFX FRAMES. All rights reserved.</p>
           <div className={styles.footerLinks}>
             <a href="/">Home</a>
             <a href="/gallery">Gallery</a>
-            <a href="/join">Join Now</a>
+            {/* <a href="/join">Join Now</a> */}
           </div>
         </div>
       </footer>

@@ -7,7 +7,7 @@ export default function Join() {
     <>
 
       <Head>
-        <title>Join Now – House of the Portfolio</title>
+        <title>Join Now – AFX FRAMES</title>
         <meta name="description" content="Choose your portfolio experience. Basic, Standard, or Premium packages starting from ₹4,999." />
       </Head>
 
@@ -45,7 +45,7 @@ export default function Join() {
                 <li><span className={styles.tick}>✓</span>Digital delivery</li>
               </ul>
               <p className={styles.planDesc}>Perfect for those just starting their creative journey. Get the foundational assets every creative needs to make their first impression.</p>
-              <a href="mailto:hello@houseofportfolios.com?subject=Basic Package Enquiry" className={styles.planBtn}>
+              <a href="mailto:hello@afxframes.com?subject=Basic Package Enquiry" className={styles.planBtn}>
                 Book Basic
               </a>
             </div>
@@ -68,7 +68,7 @@ export default function Join() {
                 <li><span className={styles.tick}>✓</span>Social-ready assets</li>
               </ul>
               <p className={styles.planDesc}>The industry favourite. Everything you need to walk into any casting room or agency meeting fully prepared and confidently branded.</p>
-              <a href="mailto:hello@houseofportfolios.com?subject=Standard Package Enquiry" className={styles.planBtnFeatured}>
+              <a href="mailto:hello@afxframes.com?subject=Standard Package Enquiry" className={styles.planBtnFeatured}>
                 Book Standard
               </a>
             </div>
@@ -92,7 +92,7 @@ export default function Join() {
                 <li><span className={styles.tick}>✓</span>Premium delivery kit</li>
               </ul>
               <p className={styles.planDesc}>The definitive portfolio experience for talent who demand the very best and arrive at every opportunity fully prepared.</p>
-              <a href="mailto:hello@houseofportfolios.com?subject=Premium Package Enquiry" className={styles.planBtn}>
+              <a href="mailto:hello@afxframes.com?subject=Premium Package Enquiry" className={styles.planBtn}>
                 Book Premium
               </a>
             </div>
@@ -115,7 +115,7 @@ export default function Join() {
               Industry-quality imagery at an accessible investment — because great talent deserves a great start.
             </p>
             <p className={styles.studentNote}>Ask about payment plans & campus collaborations.</p>
-            <a href="mailto:hello@houseofportfolios.com?subject=Student Special Enquiry" className={styles.studentBtn}>
+            <a href="mailto:hello@afxframes.com?subject=Student Special Enquiry" className={styles.studentBtn}>
               Enquire Now
             </a>
           </div>
@@ -150,15 +150,15 @@ export default function Join() {
           <div className={styles.contactDetails}>
             <div className={styles.contactItem}>
               <span className={styles.contactLabel}>Email</span>
-              <a href="mailto:hello@houseofportfolios.com" className={styles.contactValue}>
-                hello@houseofportfolios.com
+              <a href="mailto:hello@afxframes.com" className={styles.contactValue}>
+                hello@afxframes.com
               </a>
             </div>
             <div className={styles.contactDivider} />
             <div className={styles.contactItem}>
               <span className={styles.contactLabel}>Instagram</span>
               <a href="https://www.instagram.com/houseoftheportfolio?utm_source=qr&igsh=MWYwczgxNDNvdDVhMw%3D%3D" target="_blank" rel="noopener noreferrer" className={styles.contactValue}>
-                @houseofportfolios
+                @afxframes
               </a>
             </div>
             <div className={styles.contactDivider} />
@@ -173,11 +173,11 @@ export default function Join() {
       {/* Footer */}
       <footer className={styles.footer}>
         <div className={styles.footerInner}>
-          <p>© {new Date().getFullYear()} House of the Portfolio. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} AFX FRAMES. All rights reserved.</p>
           <div className={styles.footerLinks}>
             <a href="/">Home</a>
             <a href="/gallery">Gallery</a>
-            <a href="/join">Join Now</a>
+            {/* <a href="/join">Join Now</a> */}
           </div>
         </div>
       </footer>

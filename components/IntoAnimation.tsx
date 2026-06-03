@@ -15,7 +15,7 @@ export default function IntroAnimation() {
     >
       <motion.img
         src="/images/hp.png"
-        alt="House Of The Portfolio"
+        alt="AFX FRAMES"
         initial={{
           scale: 1.4,
           x: 0,
