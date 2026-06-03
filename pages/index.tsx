@@ -140,7 +140,7 @@ export default function Home() {
               Ambitious<br /><em>Creatives.</em>
             </h2>
             <p className={styles.audienceSubtitle}>Built for those who refuse to be overlooked.</p>
-            <Link href="/join" className={styles.btnPrimary}>Start Your Journey</Link>
+            {/* <Link href="/join" className={styles.btnPrimary}>Start Your Journey</Link> */}
           </div>
           <div className={styles.audienceRight}>
             {[
