@@ -209,7 +209,7 @@ export default function Home() {
           </div>
           <div className={styles.footerContact}>
             <p>hello@afxframes.com</p>
-            <p>@afxframes</p>
+            {/* <p>@afxframes</p> */}
             <p>Studio by appointment only</p>
           </div>
         </div>

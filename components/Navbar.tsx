@@ -40,9 +40,11 @@ export default function Navbar() {
   `}
     >
       <div className={styles.inner}>
-        <div className={styles.logo}   onClick={() => router.push("/")}>
+        <div className={styles.logo} onClick={() => router.push("/")}>
           <img
-            src="/images/hp.png"
+            src="/images/afxframes3.png"
+            width={220}
+            height={100}
             alt="HOP"
           />
         </div>
