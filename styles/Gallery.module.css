@@ -8,11 +8,10 @@
   justify-content: center;
   overflow: hidden;
 }
-
 .headerBg {
   position: absolute;
   inset: 0;
-  background: url('/images/Gallery/11.jpg') center/cover no-repeat;
+  background: url('/images/Gallery2/1.jpg') center/cover no-repeat;
 }
 
 .headerBg::after {

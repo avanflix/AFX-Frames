@@ -3,20 +3,20 @@ import Navbar from '../components/Navbar'
 import styles from '../styles/Gallery.module.css'
 
 const photos = [
-  { src: '/images/Gallery/1.jpg', alt: 'Fashion Portrait', span: 'tall' },
-  { src: '/images/Gallery/2.jpg', alt: 'Model Editorial', span: 'wide' },
-  { src: '/images/Gallery/3.jpg', alt: 'Studio Session', span: 'sq' },
-  // { src: '/images/Gallery/4.jpg', alt: 'Signature Look', span: 'wide' },
-  { src: '/images/Gallery/5.jpg', alt: 'Headshot', span: 'sq' },
-  { src: '/images/Gallery/6.jpg', alt: 'Fashion Editorial', span: 'tall' },
-  { src: '/images/Gallery/7.jpg', alt: 'Agency Portfolio', span: 'wide' },
-  { src: '/images/Gallery/8.jpg', alt: 'Model Casting', span: 'sq' },
-  { src: '/images/Gallery/9.jpg', alt: 'Lookbook', span: 'tall' },
-  { src: '/images/Gallery/10.jpg', alt: 'Executive Portrait', span: 'wide' },
-  { src: '/images/Gallery/11.jpg', alt: 'Influencer Content', span: 'sq' },
-  { src: '/images/Gallery/12.jpg', alt: 'Outdoor Session', span: 'wide' },
-  // { src: '/images/Gallery/13.jpg', alt: 'Cinematic Reel', span: 'wide' },
-  { src: '/images/Gallery/14.jpg', alt: 'Actor Headshot', span: 'tall' },
+  { src: '/images/gallery2/1.jpg', alt: 'Fashion Portrait', span: 'tall' },
+  { src: '/images/gallery2/2.jpg', alt: 'Model Editorial', span: 'wide' },
+  { src: '/images/gallery2/3.jpg', alt: 'Studio Session', span: 'sq' },
+  // { src: '/images/gallery2/4.jpg', alt: 'Signature Look', span: 'wide' },
+  { src: '/images/gallery2/5.jpg', alt: 'Headshot', span: 'sq' },
+  { src: '/images/gallery2/6.jpg', alt: 'Fashion Editorial', span: 'tall' },
+  { src: '/images/gallery2/7.jpg', alt: 'Agency Portfolio', span: 'wide' },
+  { src: '/images/gallery2/8.jpg', alt: 'Model Casting', span: 'sq' },
+  { src: '/images/gallery2/9.jpg', alt: 'Lookbook', span: 'tall' },
+  { src: '/images/gallery2/10.jpg', alt: 'Executive Portrait', span: 'wide' },
+  { src: '/images/gallery2/11.jpg', alt: 'Influencer Content', span: 'sq' },
+  { src: '/images/gallery2/12.jpg', alt: 'Outdoor Session', span: 'tall' },
+  // { src: '/images/Gallery2/13.jpg', alt: 'Cinematic Reel', span: 'wide' },
+  // { src: '/images/Gallery2/14.jpg', alt: 'Actor Headshot', span: 'tall' },
 ]
 
 export default function Gallery() {
@@ -39,8 +39,6 @@ export default function Gallery() {
           <p className={styles.headerSub}>Every image. A statement of excellence.</p>
         </div>
       </div>
-
-
 
       <Navbar />
       {/* Masonry Gallery */}

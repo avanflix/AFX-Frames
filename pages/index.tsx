@@ -105,25 +105,25 @@ export default function Home() {
         </div>
         <div className={styles.masonryGrid}>
           <div className={`${styles.mItem} ${styles.mTall}`}>
-            <img src="/images/Gallery/1.jpg" alt="Fashion portrait" loading="lazy" />
+            <img src="/images/Gallery2/10.jpg" alt="Fashion portrait" loading="lazy" />
           </div>
           <div className={`${styles.mItem} ${styles.mShort}`}>
-            <img src="/images/Gallery/3.jpg" alt="Model shoot" loading="lazy" />
+            <img src="/images/Gallery2/6.jpg" alt="Model shoot" loading="lazy" />
           </div>
           <div className={`${styles.mItem} ${styles.mMed}`}>
-            <img src="/images/Gallery/9.jpg" alt="Studio session" loading="lazy" />
+            <img src="/images/Gallery2/11.jpg" alt="Studio session" loading="lazy" />
           </div>
           <div className={`${styles.mItem} ${styles.mWide}`}>
-            <img src="/images/Gallery/14.jpg" alt="Editorial look" loading="lazy" />
+            <img src="/images/Gallery2/4.jpg" alt="Editorial look" loading="lazy" />
           </div>
           <div className={`${styles.mItem} ${styles.mTall2}`}>
-            <img src="/images/Gallery/7.jpg" alt="Headshot session" loading="lazy" />
+            <img src="/images/Gallery2/7.jpg" alt="Headshot session" loading="lazy" />
           </div>
           <div className={`${styles.mItem} ${styles.mSq}`}>
-            <img src="/images/Gallery/10.jpg" alt="Fashion editorial" loading="lazy" />
+            <img src="/images/Gallery2/3.jpg" alt="Fashion editorial" loading="lazy" />
           </div>
           <div className={`${styles.mItem} ${styles.mShort2}`}>
-            <img src="/images/Gallery/5.jpg" alt="Creative direction" loading="lazy" />
+            <img src="/images/Gallery2/5.jpg" alt="Creative direction" loading="lazy" />
           </div>
         </div>
         <div className={styles.photoFooter}>
