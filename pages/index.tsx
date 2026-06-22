@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import HeroVideoSlider from '@/components/HeroSlideBar'
+import Image from "next/image";
 import IntroAnimation from '@/components/IntoAnimation'
 
 export default function Home() {
@@ -58,7 +59,7 @@ export default function Home() {
             playsInline
           >
             <source
-              src="/videos/BtsVideo.mp4"
+              src="/videos/Video2.mp4"
               type="video/mp4"
             />
           </video>
@@ -105,25 +106,67 @@ export default function Home() {
         </div>
         <div className={styles.masonryGrid}>
           <div className={`${styles.mItem} ${styles.mTall}`}>
-            <img src="/images/Gallery2/10.jpg" alt="Fashion portrait" loading="lazy" />
+            <Image
+              src="/images/gallery2/10.jpg"
+              alt="Fashion portrait"
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              quality={75}
+            />
           </div>
           <div className={`${styles.mItem} ${styles.mShort}`}>
-            <img src="/images/Gallery2/6.jpg" alt="Model shoot" loading="lazy" />
+            <Image
+              src="/images/gallery2/6.jpg"
+              alt="Fashion portrait"
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              quality={75}
+            />
           </div>
           <div className={`${styles.mItem} ${styles.mMed}`}>
-            <img src="/images/Gallery2/11.jpg" alt="Studio session" loading="lazy" />
+            <Image
+              src="/images/gallery2/11.jpg"
+              alt="Fashion portrait"
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              quality={75}
+            />
           </div>
           <div className={`${styles.mItem} ${styles.mWide}`}>
-            <img src="/images/Gallery2/4.jpg" alt="Editorial look" loading="lazy" />
+            <Image
+              src="/images/gallery2/4.jpg"
+              alt="Fashion portrait"
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              quality={75}
+            />
           </div>
           <div className={`${styles.mItem} ${styles.mTall2}`}>
-            <img src="/images/Gallery2/7.jpg" alt="Headshot session" loading="lazy" />
+            <Image
+              src="/images/gallery2/7.jpg"
+              alt="Fashion portrait"
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              quality={75}
+            />
           </div>
           <div className={`${styles.mItem} ${styles.mSq}`}>
-            <img src="/images/Gallery2/3.jpg" alt="Fashion editorial" loading="lazy" />
+            <Image
+              src="/images/gallery2/3.jpg"
+              alt="Fashion portrait"
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              quality={75}
+            />
           </div>
           <div className={`${styles.mItem} ${styles.mShort2}`}>
-            <img src="/images/Gallery2/5.jpg" alt="Creative direction" loading="lazy" />
+            <Image
+              src="/images/gallery2/5.jpg"
+              alt="Fashion portrait"
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              quality={75}
+            />
           </div>
         </div>
         <div className={styles.photoFooter}>
@@ -199,8 +242,11 @@ export default function Home() {
       <footer className={styles.footer}>
         <div className={styles.footerInner}>
           <div className={styles.footerLogo}>
-            <span className={styles.footerMark}>AF</span>
-            <span className={styles.footerBrand}>AFX FRAMES</span>
+            <img
+              src="/afxframes.png"
+              alt="AFX Frames"
+              className={styles.footerLogoImage}
+            />
           </div>
           <div className={styles.footerLinks}>
             <Link href="/">Home</Link>

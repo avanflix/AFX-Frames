@@ -42,7 +42,7 @@ export default function Navbar() {
       <div className={styles.inner}>
         <div className={styles.logo} onClick={() => router.push("/")}>
           <img
-            src="/images/afxframes3.png"
+            src="/afxframes.png"
             width={220}
             height={100}
             alt="HOP"

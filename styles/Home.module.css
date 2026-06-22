@@ -829,3 +829,14 @@
   .audienceRow { grid-template-columns: 1fr; }
   .mission, .services, .photoSection, .audience, .whyUs { padding: 80px 24px; }
 }
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+}
+
+.footerLogoImage {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}

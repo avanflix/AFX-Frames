@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navbar from '../components/Navbar'
 import styles from '../styles/Gallery.module.css'
+import Image from 'next/image'
 
 const photos = [
   { src: '/images/gallery2/1.jpg', alt: 'Fashion Portrait', span: 'tall' },
@@ -10,7 +11,7 @@ const photos = [
   { src: '/images/gallery2/5.jpg', alt: 'Headshot', span: 'sq' },
   { src: '/images/gallery2/6.jpg', alt: 'Fashion Editorial', span: 'tall' },
   { src: '/images/gallery2/7.jpg', alt: 'Agency Portfolio', span: 'wide' },
-  { src: '/images/gallery2/8.jpg', alt: 'Model Casting', span: 'sq' },
+  { src: '/images/gallery2/8.jpg', alt: 'Model Casting', span: 'wide' },
   { src: '/images/gallery2/9.jpg', alt: 'Lookbook', span: 'tall' },
   { src: '/images/gallery2/10.jpg', alt: 'Executive Portrait', span: 'wide' },
   { src: '/images/gallery2/11.jpg', alt: 'Influencer Content', span: 'sq' },
@@ -46,7 +47,15 @@ export default function Gallery() {
         <div className={styles.galleryGrid}>
           {photos.map((photo, i) => (
             <div key={i} className={`${styles.photoItem} ${styles[photo.span]}`}>
-              <img src={photo.src} alt={photo.alt} loading="lazy" />
+              <Image
+                src={photo.src}
+                alt={photo.alt}
+                width={800}
+                height={1200}
+                className={styles.galleryImage}
+                loading="lazy"
+                quality={75}
+              />
               <div className={styles.photoOverlay}>
                 <span className={styles.photoLabel}>{photo.alt}</span>
               </div>
